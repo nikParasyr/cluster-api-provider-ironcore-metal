@@ -75,3 +75,6 @@ variables:
   CNI_RESOURCES: "https://raw.githubusercontent.com/projectcalico/calico/v3.33.0/manifests/calico.yaml"
   EXP_KUBEADM_BOOTSTRAP_FORMAT_IGNITION: "true"
   CLUSTER_TOPOLOGY: "true"
+
+intervals:
+  clusterctl-upgrade/wait-infrastructure-provisioned: ["5m", "10s"]
